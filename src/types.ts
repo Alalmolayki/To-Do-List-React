@@ -1,9 +1,8 @@
-export type Category = 'Work' | 'Personal' | 'Study' | 'Health' | 'Leisure';
+export type Category = 'Work' | 'Personal' | 'Study' | 'Exercise' | 'Leisure';
 
 export interface Task {
-  id: number;
+  id: string;
   text: string;
   completed: boolean;
   category: Category;
-  createdAt: Date;
 }
